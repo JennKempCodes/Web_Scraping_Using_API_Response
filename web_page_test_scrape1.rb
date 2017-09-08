@@ -11,6 +11,24 @@ require 'crack'
 @password = 'PASSWORD'
 @username = 'EMAIL'
 
+# Read in a URL from a file
+
+
+
+
+# @file_url = readfromfile
+
+#input URL into test box
+
+# click the start button
+
+# grab the url call original_url
+
+# now change it to the XML api version - call it xml_url
+
+# use ruby .gsub to remove the /result/ and change it to xmlResult
+
+  #  @file_url     # http://www.webpagetest.org/result/170908_XW_6863b2c6c39527238e4b2f9146c6f78b/
 @web_page_test_loading_results_url = 'http://www.webpagetest.org/xmlResult/170904_JM_db94ee89b80bac884269b9b857fab766/'
 
 @page = HTTParty.get(@web_page_test_loading_results_url).to_s
@@ -34,6 +52,8 @@ end
 
 #begin parse for value #loadTime
 
-# @parse_page.get('loadTime').text
+
+
+ # @parse_page.get('loadTime').text
 
 #begin email send
